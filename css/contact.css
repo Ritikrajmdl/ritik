@@ -1,0 +1,40 @@
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 100%;
+}
+.info{
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    font-size: 25;
+    opacity: 0.8;
+    
+}
+.contact{
+    width: 50%;
+    margin-right: 10px;
+}
+.location{
+    font-size: 20;
+    color: black;
+    text-decoration:none;
+}
+
+.sumit-button{
+    margin-top: 25px;
+    direction: rtl;
+}
+
+.form{
+    margin-right: 75px;
+}

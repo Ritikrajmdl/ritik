@@ -1,0 +1,141 @@
+.main {
+    /*background-color: lightskyblue;*/
+}
+
+body {
+    margin: 0 !important;
+}
+
+.header {
+    background-color: #194041;
+    color: white;
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+}
+
+.header>.menu>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 5%
+}
+
+.menu {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.body {
+    height: calc(100vh - 100px);
+}
+
+.footer {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 800;
+    color: white;
+    background-color: #194041;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-left: 25px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Button design start */
+
+.button {
+    background-color: #194041;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Button design end */
+
+/* Input field design Start */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #000000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+/* Input field design end */
